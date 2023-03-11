@@ -1,5 +1,5 @@
 import styled, { ThemeProvider } from "styled-components";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 
 import { GlobalStyle } from "../styled/GlobalStyle";
 
@@ -24,7 +24,7 @@ function App() {
   }
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <ThemeProvider theme={isLightTheme ? theme.darkTheme : theme.lightTheme}>
         <GlobalStyle />
         <StyledApp>
@@ -33,7 +33,7 @@ function App() {
           <Footer />
         </StyledApp>
       </ThemeProvider >
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
