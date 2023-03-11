@@ -3,9 +3,10 @@ import styled from 'styled-components'
 const StyledFlex = styled.div`
   display: flex;
   flex-direction: ${({ direction }) => direction || 'row'};
-  align-items: ${({ align }) => align || 'stretch'};
-  justify-content: ${({ justify }) => justify || 'stretch'} ;
-  margin: ${({ margin }) => margin || '0'};
+  align-items: ${({ align }) => align || 'center'};
+  justify-content: ${({ justify }) => justify || 'center'} ;
+  margin: ${({ margin }) => margin || 'auto'};
+  width: ${({ width }) => width || 'auto'};
 `;
 
 export default function Flex(props) {
