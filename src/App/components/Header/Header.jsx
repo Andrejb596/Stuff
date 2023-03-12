@@ -1,8 +1,8 @@
 import { StyledHeader, StyledNavLink, HeaderTitle } from './Header.styled';
 import { Container } from '../../../styled/GlobalStyle';
 import { ROUTES } from '../../../routes/Routes';
-import Flex from '../../../components/Flex';
 import Switch from '../Switch/Switch';
+import { Flex } from '../../../components';
 
 export default function Header({ toggleTheme, isLightTheme }) {
   return (
@@ -10,7 +10,7 @@ export default function Header({ toggleTheme, isLightTheme }) {
       <Container>
         <Flex direction='column'>
           <HeaderTitle>KEEP CALM</HeaderTitle>
-          <Flex justify='space-around' width='100%'>
+          <Flex direction='row' justify='space-around' width='100%'>
             <nav>
               <StyledNavLink to={ROUTES.HOME}>Home</StyledNavLink>
               <StyledNavLink to={ROUTES.ABOUT}>About</StyledNavLink>

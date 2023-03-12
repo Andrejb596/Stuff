@@ -1,4 +1,3 @@
-import Flex from '../../../components/Flex';
 import { Container } from '../../../styled/GlobalStyle';
 import { StyledFooter } from './Footer.styled';
 
