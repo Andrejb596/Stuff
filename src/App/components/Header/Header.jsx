@@ -4,7 +4,7 @@ import { ROUTES } from '../../../routes/Routes';
 import Switch from '../Switch/Switch';
 import { Flex } from '../../../components';
 
-export default function Header({ toggleTheme, isLightTheme }) {
+export default function Header() {
   return (
     <StyledHeader>
       <Container>
@@ -15,7 +15,7 @@ export default function Header({ toggleTheme, isLightTheme }) {
               <StyledNavLink to={ROUTES.HOME}>Home</StyledNavLink>
               <StyledNavLink to={ROUTES.ABOUT}>About</StyledNavLink>
             </nav>
-            <Switch toggleTheme={toggleTheme} isLightTheme={isLightTheme} />
+            <Switch />
           </Flex>
         </Flex>
       </Container>

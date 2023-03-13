@@ -1,14 +1,17 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { AppContext } from '../../App';
 import { MoonIcon, SunIcon } from './icons/icons';
 import './style.css';
 
-export default function Switch({ toggleTheme, isLightTheme }) {
-  const [isToggled, setIsToggled] = useState(isLightTheme);
+export default function Switch() {
+  const appContext = useContext( AppContext );
+
+  const [isToggled, setIsToggled] = useState(appContext.isLightTheme);
 
   const onToggled = () => {
     setIsToggled(!isToggled);
-    toggleTheme();
-    localStorage.setItem('switchTheme', JSON.stringify(isLightTheme ? 'light' : 'dark'));
+    appContext.toggleTheme();
+    localStorage.setItem('switchTheme', JSON.stringify(appContext.isLightTheme ? 'light' : 'dark'));
   };
 
   return (
