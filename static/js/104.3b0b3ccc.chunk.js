@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkstuff=self.webpackChunkstuff||[]).push([[104],{104:function(n,e,t){t.r(e),t.d(e,{default:function(){return r}});var u,f=t(168),s=t(444),c=t(184),i=s.ZP.div(u||(u=(0,f.Z)(["\n  display: flex;\n  justify-content: center;\n  align-items: center;\n"])));function r(){return(0,c.jsx)(i,{children:(0,c.jsx)("h1",{children:"New page"})})}}}]);
+//# sourceMappingURL=104.3b0b3ccc.chunk.js.map

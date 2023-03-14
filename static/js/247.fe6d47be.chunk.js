@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkstuff=self.webpackChunkstuff||[]).push([[247],{247:function(u,n,r){r.r(n),r.d(n,{default:function(){return f}});r(791);var e=r(184);function f(){return(0,e.jsx)("div",{children:"ErrorPage"})}}}]);
+//# sourceMappingURL=247.fe6d47be.chunk.js.map
